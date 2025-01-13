@@ -1,4 +1,5 @@
 Business Problem Overview
+
 In the telecom industry, customers are able to choose from multiple service providers and actively switch from one operator to another. In this highly competitive market, the telecommunications industry experiences an average of 15-25% annual churn rate. Given the fact that it costs 5-10 times more to acquire a new customer than to retain an existing one, customer retention has now become even more important than customer acquisition.
 
 For many incumbent operators, retaining high profitable customers is the number one business goal.
@@ -8,6 +9,7 @@ To reduce customer churn, telecom companies need to predict which customers are 
 In this project, we will analyse customer-level data of a leading telecom firm, build predictive models to identify customers at high risk of churn and identify the main indicators of churn.
 
 Understanding and Defining Churn
+
 There are two main models of payment in the telecom industry - postpaid (customers pay a monthly/annual bill after using the services) and prepaid (customers pay/recharge with a certain amount in advance and then use the services).
 
 In the postpaid model, when customers want to switch to another operator, they usually inform the existing operator to terminate the services, and we directly know that this is an instance of churn.
@@ -19,6 +21,7 @@ Thus, churn prediction is usually more critical (and non-trivial) for prepaid cu
 This project is based on the Indian and Southeast Asian market.
 
 Definitions of Churn
+
 There are various ways to define churn, such as:
 
 Revenue-based churn: Customers who have not utilised any revenue-generating facilities such as mobile internet, outgoing calls, SMS etc. over a given period of time. One could also use aggregate metrics such as ‘customers who have generated less than INR 4 per month in total/average/median revenue’.
@@ -32,6 +35,7 @@ A potential shortcoming of this definition is that when the customer has stopped
 In this project, we will use the usage-based definition to define churn.
 
 High-value Churn
+
 In the Indian and the southeast Asian market, approximately 80% of revenue comes from the top 20% customers (called high-value customers). Thus, if we can reduce churn of the high-value customers, we will be able to reduce significant revenue leakage.
 
 In this project, we will define high-value customers based on a certain metric (mentioned later below) and predict churn only on high-value customers.
@@ -42,6 +46,7 @@ The dataset contains customer-level information for a span of four consecutive m
 The business objective is to predict the churn in the last (i.e. the ninth) month using the data (features) from the first three months. To do this task well, understanding the typical customer behaviour during churn will be helpful.
 
 Understanding Customer Behaviour During Churn
+
 Customers usually do not decide to switch to another competitor instantly, but rather over a period of time (this is especially applicable to high-value customers). In churn prediction, we assume that there are three phases of customer lifecycle :
 
 The ‘good’ phase: In this phase, the customer is happy with the service and behaves as usual.
